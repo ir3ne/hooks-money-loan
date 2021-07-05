@@ -20,7 +20,7 @@ const TotalRefound = () => {
   return (
     <div>
       <h3>Total Refound</h3>
-      <div>Total Refound: {tolalRefound}</div>
+      <div>Total Refound: {tolalRefound} €</div>
     </div>
   );
 };
