@@ -2,11 +2,11 @@ import React, { useState, createContext } from 'react';
 
 export const MoneyLoanContext = createContext();
 
-const MoneyLoanProvider = (props) => {
+export const MoneyLoanProvider = (props) => {
   const [money, setMoney] = useState(0);
   const [interest, setInterest] = useState(0);
   const [tolalRefound, setTolalRefound] = useState(0);
-  const [months, setMonths] = useState(0);
+  const [months, setMonths] = useState(6);
 
   const contextValue = {
     money, 
@@ -25,5 +25,3 @@ const MoneyLoanProvider = (props) => {
     </MoneyLoanContext.Provider>
   );
 }
-
-export default MoneyLoanProvider;

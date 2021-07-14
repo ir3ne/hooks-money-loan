@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { MoneyLoanContext } from '../context/MoneyLoanProvider';
+import { MoneyLoanContext } from '../context/MoneyLoanContext';
 
 const Months = () => {
   const { months, setMonths, tolalRefound } = useContext(MoneyLoanContext);
@@ -15,6 +15,7 @@ const Months = () => {
   }
 
   function montlyRate(tolalRefound) {
+    console.log(months, 'months');
     if (tolalRefound > 0) {
       return (parseInt(tolalRefound) / parseInt(months)).toFixed(1);
     }

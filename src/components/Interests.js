@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { MoneyLoanContext } from '../context/MoneyLoanProvider';
+import { MoneyLoanContext } from '../context/MoneyLoanContext';
 
 const Interest = () => {
   const { money, interest, setInterest } = useContext(MoneyLoanContext);

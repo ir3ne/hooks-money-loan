@@ -1,5 +1,5 @@
 import './App.css';
-import MoneyLoanProvider from './context/MoneyLoanProvider';
+import { MoneyLoanProvider } from './context/MoneyLoanContext';
 import Money from './components/Money';
 import Interests from './components/Interests';
 import TotalRefound from './components/TotalRefound';
