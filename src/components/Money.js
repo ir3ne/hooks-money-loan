@@ -24,6 +24,7 @@ const Money = () => {
           <div>
             <input
               name="money-selector"
+              data-testid="money-selector"
               type="range"
               min={minMoney}
               max={maxMoney}
