@@ -15,7 +15,6 @@ const Months = () => {
   }
 
   function montlyRate(tolalRefound) {
-    console.log(months, 'months');
     if (tolalRefound > 0) {
       return (parseInt(tolalRefound) / parseInt(months)).toFixed(1);
     }
@@ -35,6 +34,7 @@ const Months = () => {
           <div>
             <input
               name="money-selector"
+              data-testid="month-selector"
               type="range"
               min={minMonths}
               max={maxMonths}
